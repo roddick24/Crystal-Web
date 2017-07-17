@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*調整時可先新增 調完刪除*/
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 主色(primary) #29323b */
+
+
+/* 強調色(accent) #E2C0B9 */
+
+
+/* 字體顏色 #333 */
+
+html {
+    background-color: #29323b;
+    position: relative;
+}
+
+html:after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    display: block;
+    background: #E2C0B9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cv {
+    width: 700px;
+    margin: 100px auto;
+    background: white;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16)
+}
+
+.cv-header {
+    background: #eee;
+    /*數字六個一樣可寫3個就好*/
+}
+
+.cv-header>h1,
+.section-title {
+    text-transform: uppercase;
+}
+
+.cv-footer {
+    background: #29323b;
+}
+
+.cv-header,
+.cv-body,
+cv-footer {
+    padding: 40px 50px;
+}
+
+.experience {
+    position: relative;
+    padding: 30px 0;
+    border-bottom: 1px dashed #333;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+
+/*讓方位知道依據為experience*/
+
+.experience>img {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.social-link {
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-right: 1px dashed #eee;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-link:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+.social-link:active {
+    background: rgba(0, 0, 0, .8);
+}
